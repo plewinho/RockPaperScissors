@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+
+<p class="title">Rock Paper Scissor </p>
+
+<button class="move-button" onclick=" playGame('Kamien');">
+   <img class="move-icon" src="Kamien-emoji.png"> </button>
+
+<button class="move-button" onclick=" playGame('Papier');"> 
+  <img class="move-icon" src="Papier-emoji.png"></button>
+
+<button class="move-button" onclick=" playGame('Nozyczki');"> 
+  <img class="move-icon" src="Nozyczki-emoji.png"></button>
+
+<p class="js-results results"></p>
+<p class="js-moves"></p>
+<p class="js-score score"></p>
+
+<button onclick=" score.wins = 0; score.losses = 0; score.ties = 0;
+localStorage.removeItem('score');
+updateScoreElement();" class="reset-button">
+Reset Score</button>
+
+
+<script src="10-kamien-papier-nozyczki.js"></script>
+
+</body>
+</html>
